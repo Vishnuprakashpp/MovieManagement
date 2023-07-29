@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Glowing Transparent Navbar</title>
+  <link rel="stylesheet" href="userhomestyle.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <div class="logo"><img src="cinemax-1-logo-png-transparent.png" alt="CineMax Logo"></div>
+      <ul class="nav-links">
+        <li><a href="UserHome">Home</a></li>
+        <li><a href="usersearch.html">Search</a></li>
+        <li><a href="/UserSearchmoviesz">Watchlist</a></li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <div class="username">Your Username</div>
+      <button class="logout-btn" onclick="redirectToUserHome();">Logout</button>
+    </div>
+  </nav>
+     <script>
+        function redirectToUserHome() {
+            // Perform the redirection here
+            window.location.href = "LoginUser";
+        }
+    </script>
+</body>
+</html>
+
+
+

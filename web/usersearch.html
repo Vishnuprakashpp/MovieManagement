@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="userhomestyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links li {
+            list-style: none;
+            margin-right: 15px;
+        }
+
+        .logo img {
+            height: 50px; /* Set the appropriate height for your logo */
+        }
+
+        .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto; /* Added margin to push the container down */
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="logo">
+                <img src="cinemax-1-logo-png-transparent.png" alt="CineMax Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="UserHome">Home</a></li>
+                <li><a href="usersearch.html">Search</a></li>
+                <li><a href="UserSearchmoviesz">Watchlist</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="username">Your Username</div>
+            <button class="logout-btn">Logout</button>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="form-group">
+            <form method="POST" action="SearchMovie">
+                <label for="title">Movie Name:</label><br><br>
+                <input type="text" id="title" name="title" class="form-control"><br><br>
+                <input type="submit" value="Search" class="btn btn-success">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
